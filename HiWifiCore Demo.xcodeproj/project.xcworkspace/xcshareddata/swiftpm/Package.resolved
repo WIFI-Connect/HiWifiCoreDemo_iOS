@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CryptoSwift",
+        "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "4e31051c63cc0ddf10a25cf5318856c510cf77f4",
+          "version": "1.4.0"
+        }
+      },
+      {
+        "package": "HiWifiCore",
+        "repositoryURL": "https://github.com/WIFI-Connect/HiWifiCore_iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "59a9bad48afdb2ae08f73d1081ee543145bb751a",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
