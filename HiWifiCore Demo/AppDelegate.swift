@@ -62,25 +62,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     // MARK: - UNUserNotificationCenterDelegate
 
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: (UNNotificationPresentationOptions) -> Void)
-    {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: (UNNotificationPresentationOptions) -> Void) {
         print("app notification foreground callback")
         completionHandler(
-            [UNNotificationPresentationOptions.alert,
-             UNNotificationPresentationOptions.sound,
-             UNNotificationPresentationOptions.badge])
+            [UNNotificationPresentationOptions.alert, UNNotificationPresentationOptions.sound, UNNotificationPresentationOptions.badge])
     }
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        
         let targetInfo: String = response.notification.request.content.categoryIdentifier
-        if(targetInfo.starts(with: "hiwifi")) {
+        if targetInfo.starts(with: "hiwifi") {
             hiwifiService.onReceive(notification: response.notification)
         }
         completionHandler()
     }
 
-    
+
     // MARK: - HiWifiLocationListener
 
     func onUpdate(location: HiWifiLocation?, error: HiWifiError?) {

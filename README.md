@@ -5,7 +5,7 @@ This is an Xcode demo project for the **HiWifiCore Swift Package** available at
 
 Download the demo project and open it with Xcode 12.5.1 or later.
 
-Check if the needed Swift packages **CryptoSwift** 1.4.0 and **HiWifiCore** 1.0.2 are loaded. 
+Check if the needed Swift packages **CryptoSwift** 1.4.0 and **HiWifiCore** 1.0.2 (or later) are loaded. 
 
 Build an run the demo app on a **real device with iOS 13 or later**.  
 **The HiWifiCore Demo App does not work on simulator.**
