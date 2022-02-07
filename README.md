@@ -26,4 +26,4 @@ The demo app should send the following push notification:
 > HiWifi Core Test   
 > HiWifi Core setup successful! 
 
-When you tap the notification the demo app should open [https://wifi-connect.eu](https://wifi-connect.eu) with your defalt browser on your device.
+When you tap the notification the demo app should open [https://wifi-connect.eu](https://wifi-connect.eu) with the default browser on the device.
